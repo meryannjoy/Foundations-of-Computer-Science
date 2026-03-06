@@ -37,14 +37,19 @@ If you need to download everything again:
 python scripts/download_dataset.py --force
 ```
 
-After extraction, the project uses `videos/` and `categories/` from the repository root.
+After extraction, the script normalizes the dataset to `videos/` (CSV) and `categories/` (JSON) in the repository root, which is the layout used by the notebook.
 
 ## How to Run the Code
-1. Create a virtual environment:
+1. Clone the repository and enter the project folder:
+```bash
+git clone https://github.com/meryannjoy/Foundations-of-Computer-Science.git
+cd Foundations-of-Computer-Science
+```
+2. Create a virtual environment:
 ```bash
 python3 -m venv .venv
 ```
-2. Activate it:
+3. Activate it:
 ```bash
 source .venv/bin/activate
 ```
@@ -52,15 +57,15 @@ Windows (PowerShell):
 ```powershell
 .venv\Scripts\Activate.ps1
 ```
-3. Install dependencies:
+4. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-4. Download and extract the dataset:
+5. Download and extract the dataset:
 ```bash
 python scripts/download_dataset.py
 ```
-5. Start Jupyter and open `Youtube Trending Notebook.ipynb`:
+6. Start Jupyter and open `Youtube Trending Notebook.ipynb`:
 ```bash
 jupyter lab
 ```
